@@ -5,21 +5,21 @@
 class Lplexdump < Formula
   desc "NMEA 2000 CAN bus streaming client"
   homepage "https://github.com/sixfathoms/lplex"
-  version "0.1.2"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sixfathoms/lplex/releases/download/v0.1.2/lplexdump_0.1.2_darwin_amd64.tar.gz"
-      sha256 "f190f4a6855f2cd3baf6d21e4eb124dcbc85252f98c2615d4d8d2a55ac0a7bb7"
+      url "https://github.com/sixfathoms/lplex/releases/download/v0.3.1/lplexdump_0.3.1_darwin_amd64.tar.gz"
+      sha256 "2f277678ec6825bb8481af1b1114f730392ed597dbedb7040cff97e2d6d1ca7e"
 
       define_method(:install) do
         bin.install "lplexdump"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sixfathoms/lplex/releases/download/v0.1.2/lplexdump_0.1.2_darwin_arm64.tar.gz"
-      sha256 "cfd0308d67a2c189870bb00e019f617047445f65231ec226f7422776064c0353"
+      url "https://github.com/sixfathoms/lplex/releases/download/v0.3.1/lplexdump_0.3.1_darwin_arm64.tar.gz"
+      sha256 "61ff926d538ee464e625d6a9f7c2bcd47710206ec85e5cac2ee5dc19178d05af"
 
       define_method(:install) do
         bin.install "lplexdump"
@@ -29,15 +29,15 @@ class Lplexdump < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sixfathoms/lplex/releases/download/v0.1.2/lplexdump_0.1.2_linux_amd64.tar.gz"
-      sha256 "78dc8fff387a5482ea1d9ad47461c092b8ebeef40e1a4e533b69cd52733b92e1"
+      url "https://github.com/sixfathoms/lplex/releases/download/v0.3.1/lplexdump_0.3.1_linux_amd64.tar.gz"
+      sha256 "d94d91bd2ad2b66d2ca334a4580bedcab6f490c57a249a3d7db592bf80f64b7b"
       define_method(:install) do
         bin.install "lplexdump"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sixfathoms/lplex/releases/download/v0.1.2/lplexdump_0.1.2_linux_arm64.tar.gz"
-      sha256 "fe99a46893bc0ddda901c38e1d6ada642512a522999487483bcb6b86d40151b1"
+      url "https://github.com/sixfathoms/lplex/releases/download/v0.3.1/lplexdump_0.3.1_linux_arm64.tar.gz"
+      sha256 "a7389b03e635af564a9137f54f17b47d5fe03b23f86c770bf356e2528bb79781"
       define_method(:install) do
         bin.install "lplexdump"
       end
