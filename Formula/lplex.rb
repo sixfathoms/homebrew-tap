@@ -5,21 +5,21 @@
 class Lplex < Formula
   desc "NMEA 2000 CAN bus multi-tool CLI"
   homepage "https://github.com/sixfathoms/lplex"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sixfathoms/lplex/releases/download/v0.4.0/lplex_0.4.0_darwin_amd64.tar.gz"
-      sha256 "edcef29c3f682b0efc818ac1cfe13df07d361f2e18e57a0b807cfc5c3d096d76"
+      url "https://github.com/sixfathoms/lplex/releases/download/v0.4.1/lplex_0.4.1_darwin_amd64.tar.gz"
+      sha256 "1282e1a6ff21aec3e00ea5613321b550d60c500687add3f6706b9c36c5485f6f"
 
       define_method(:install) do
         bin.install "lplex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sixfathoms/lplex/releases/download/v0.4.0/lplex_0.4.0_darwin_arm64.tar.gz"
-      sha256 "2dffd6795dacab18b893a703dbcb74f6f0ea982b259023c73c1731a4f1b1f1f6"
+      url "https://github.com/sixfathoms/lplex/releases/download/v0.4.1/lplex_0.4.1_darwin_arm64.tar.gz"
+      sha256 "71e4f5937ff7f15aeffc6d1417bc6c7fecd139025fc9e5a56405cb97512345b7"
 
       define_method(:install) do
         bin.install "lplex"
@@ -29,15 +29,15 @@ class Lplex < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sixfathoms/lplex/releases/download/v0.4.0/lplex_0.4.0_linux_amd64.tar.gz"
-      sha256 "f7cec2f7dc2882cfae65bb95f3112065600f7929e20da94391dcb46bd1306526"
+      url "https://github.com/sixfathoms/lplex/releases/download/v0.4.1/lplex_0.4.1_linux_amd64.tar.gz"
+      sha256 "3735b889cdfbc915eda6d24b2bc485d609949de7eb9c9fe5a0b74c73bc0210d8"
       define_method(:install) do
         bin.install "lplex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sixfathoms/lplex/releases/download/v0.4.0/lplex_0.4.0_linux_arm64.tar.gz"
-      sha256 "6d4b96eb0bfecec6e426701b96872e2563d1f06db73da264985b3428709c5476"
+      url "https://github.com/sixfathoms/lplex/releases/download/v0.4.1/lplex_0.4.1_linux_arm64.tar.gz"
+      sha256 "09392a42fba41b4943dac7a0821b617582c72dfef520b38838228b383423d0a5"
       define_method(:install) do
         bin.install "lplex"
       end
